@@ -1,0 +1,436 @@
+:root {
+    --white: #FFF;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    background-color: #012D63;
+}
+
+.header-wrap {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.lang-list {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 29px;
+}
+
+.nav-list-link {
+    color: #C7C7C7;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.2s;
+}
+
+.nav-list-link:hover {
+    color: var(--white);
+}
+
+.lang-list-btn {
+    color: #DCDCDC;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.lang-list-btn:hover {
+    color: var(--white);
+}
+
+.hero {
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 91px;
+    padding-bottom: 183px;
+}
+
+.hero-logo {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 150px;
+}
+
+.hero-logo-span {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    color: var(--white);
+    font-family: "PT Serif";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-title {
+    position: relative;
+    right: 15px;
+    color: var(--white);
+    font-family: "Playfair Display";
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero-motto {
+    color: var(--white);
+    font-family: "Playfair Display";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero-desc {
+    width: 505px;
+    color: var(--white);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 41px;
+}
+
+.hero-btn {
+    display: flex;
+    width: 254px;
+    height: 67px;
+    border-radius: 10px;
+    background-color: #8E32C6;
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages {
+    background-image: url("../images/advantages-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 105px 0;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 95px;
+    padding: 25px 50px 25px 50px;
+    outline: 5px solid #8E32C6;
+}
+
+.advantages-list-item {
+    display: flex;
+    gap: 50px;
+}
+
+.advantages-list-desc {
+    width: 159px;
+    color: var(--white);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+.advantages-list-item:nth-child(1)::after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 346px;
+    background-color: var(--white);
+}
+
+.advantages-list-item:nth-child(3)::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 346px;
+    background-color: var(--white);
+}
+
+.advantages-list-desc:nth-child(2) {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.reviews {
+    background-image: url("../images/plants.png"),
+                      url("../images/reviews-bg.png");
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, center;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    padding-top: 25px;
+    padding-bottom: 114px;
+}
+
+.reviews-title {
+    color: var(--white);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.reviews-list-item {
+    padding: 49px 14px 29px 13px;
+    border-radius: 15px;
+}
+
+.reviews-list-item:nth-child(1) {
+    background: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+    box-shadow: 0px 14px 0px -5px #7B54B2, 0px 30px 0px -13px #533978;
+}
+
+.reviews-list-item:nth-child(2) {
+    background: linear-gradient(137deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+    box-shadow: 0px 14px 0px -5px #9159B1, 0px 30px 0px -13px #61337C;
+}
+
+.reviews-list-item:nth-child(3) {
+    background: linear-gradient(143deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+    box-shadow: 0px 14px 0px -5px #B95A4C, 0px 30px 0px -13px #732F26;
+}
+
+.reviews-list-desc {
+    width: 228px;
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reviews-list-date {
+    margin-top: 8px;
+    margin-bottom: 47px;
+    color: #D8D8D8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reviews-info {
+    display: flex;
+    gap: 5px;
+}
+
+.reviews-text-name {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1px;
+}
+
+.reviews-text-year {
+    color: #D8D8D8;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.order {
+    background-image: url("../images/order-bg.png");
+    background-size: cover;
+    padding-top: 21px;
+    padding-bottom: 37px;
+}
+
+.order-title {
+    color: var(--white);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 33px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    padding: 12px 79px 13px 25px;
+    width: 690px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: var(--white);
+    margin-bottom: 19px;
+}
+
+.email-input {
+    color: #959595;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+}
+
+.email-btn {
+    color: #8D8D8D;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    margin-left: auto;
+}
+
+.buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 19px;
+    margin-bottom: 19px;
+}
+
+.buy-input {
+    flex-basis: 580px;
+    color: #959595;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--white);
+    padding: 11px 0 11px 24px;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 68px;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 16px;
+    background-color: #8E32C6;
+}
+
+.footer {
+    background-color: #021635;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+.footer-support {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.footer-support-item {
+    display: flex;
+    flex-basis: 1110px;
+}
+
+.footer-support-text {
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-support-link {
+    margin-left: auto;
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-info-text {
+    margin-top: 24px;
+}
+
+.footer-info-desc {
+    color: var(--white);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-info-desc:first-child {
+    margin-bottom: 7px;
+}
+
+.footer-info-logo {
+    display: block;
+    height: 95px;
+    position: relative;
+    margin-left: auto;
+}
+
+.footer-info-logo-span {
+    position: absolute;
+    bottom: 0;
+    left: 26px;
+    color: var(--white);
+    font-family: PT Serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
