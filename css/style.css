@@ -2,6 +2,10 @@
     --white: #FFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto";
 }
@@ -183,6 +187,72 @@ body {
 .advantages-list-desc:nth-child(2) {
     margin-top: 4px;
     margin-bottom: 0;
+}
+
+.product {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-top: 2px solid var(--white);
+    background-image: linear-gradient(90deg, rgba(69,119,252,1) 0%, rgba(2,22,53,1) 20%, rgba(2,22,53,1) 80%, rgba(131,58,180,1) 100%);
+}
+
+.product-title {
+    color: var(--white);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.product-list-item {
+    flex-basis: calc((100% - 100px) / 3);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(57deg, rgba(37,1,61,1) 0%, rgba(123,13,196,1) 100%);
+    border: 4px solid rgb(21, 113, 152);
+    transition: transform 0.5s;
+}
+
+.product-list-item:hover {
+    transform: translate(20px, -20px);
+}
+
+.product-list-img {
+    width: 100%;
+    height: 300px;
+}
+
+.product-list-text {
+    padding: 20px 0;
+}
+
+.product-list-title {
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-list-cost {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .reviews {
@@ -433,4 +503,34 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(1, 45, 99);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s ease;
+    border: 2px solid #035ac4;
+}
+
+.top:hover {
+    color: rgb(186, 186, 186);
+}
+
+.top > svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-icon {
+    fill: currentColor;
 }

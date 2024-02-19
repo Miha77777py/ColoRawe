@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-wrap">
                 <a href="" class="header-logo">
@@ -20,12 +20,12 @@
                 </a>
                 <nav class="header-nav">
                     <ul class="nav-list">
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Main page</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Benefits</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Advantages</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Reviews</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Contacts</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Order</a></li>
+                        <li class="nav-list-item"><a href="#main" class="nav-list-link">Main page</a></li>
+                        <li class="nav-list-item"><a href="#advantages" class="nav-list-link">Advantages</a></li>
+                        <li class="nav-list-item"><a href="#product" class="nav-list-link">Product</a></li>
+                        <li class="nav-list-item"><a href="#reviews" class="nav-list-link">Reviews</a></li>
+                        <li class="nav-list-item"><a href="#order" class="nav-list-link">Order</a></li>
+                        <li class="nav-list-item"><a href="#footer" class="nav-list-link">Contacts</a></li>
                     </ul>
                 </nav>
                 <ul class="lang-list">
@@ -38,7 +38,7 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <a href="" class="hero-logo">
+                <a href="" class="hero-logo" id="main">
                     <img src="./images/hero-logo.png" class="hero-logo-img">
                     <span class="hero-logo-span">С&R</span>
                 </a>
@@ -50,10 +50,10 @@
                     sneakers as we do.
                     Good luck finding your way in the world of custom sneakers.
                 </p>
-                <a href="" class="hero-btn">Buy my Nike</a>
+                <a href="#order" class="hero-btn">Buy my Nike</a>
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <ul class="advantages-list">
                     <li class="advantages-list-item">
@@ -77,7 +77,56 @@
                 </ul>
             </div>
         </section>
-        <section class="reviews">
+        <section class="product" id="product">
+            <div class="container">
+                <h2 class="product-title">Most popular products</h2>
+                <ul class="product-list">
+                    <li class="product-list-item">
+                        <img src="./images/trainers.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike Trainers</h3>
+                            <span class="product-list-cost">59.9$</span>
+                        </div>
+                    </li>
+                    <li class="product-list-item">
+                        <img src="./images/running.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike Men's Running Trainers</h3>
+                            <span class="product-list-cost">69.9$</span>
+                        </div>
+                    </li>
+                    <li class="product-list-item">
+                        <img src="./images/high-top.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike High Top Trainers</h3>
+                            <span class="product-list-cost">69.9$</span>
+                        </div>
+                    </li>
+                    <li class="product-list-item">
+                        <img src="./images/women-trainers.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike Women's Black Trainers</h3>
+                            <span class="product-list-cost">59.9$</span>
+                        </div>
+                    </li>
+                    <li class="product-list-item">
+                        <img src="./images/white-trainers.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike White Trainers</h3>
+                            <span class="product-list-cost">89.9$</span>
+                        </div>
+                    </li>
+                    <li class="product-list-item">
+                        <img src="./images/modern-trainers.png" alt="" class="product-list-img">
+                        <div class="product-list-text">
+                            <h3 class="product-list-title">Nike Modern Trainers</h3>
+                            <span class="product-list-cost">99.9$</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h3 class="reviews-title">Reviews</h3>
                 <ul class="reviews-list">
@@ -128,7 +177,7 @@
                 </ul>
             </div>
         </section>
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <h3 class="order-title">Order</h3>
                 <form class="email">
@@ -144,7 +193,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <ul class="footer-support">
                 <li class="footer-support-item">
@@ -172,5 +221,10 @@
             </div>
         </div>
     </footer>
+    <a href="#header" class="top">
+        <svg width="20" height="20">
+            <use class="top-icon" href="./images/symbol-defs.svg#icon-arrow-up"></use>
+        </svg>
+    </a>
 </body>
 </html>
